@@ -67,7 +67,7 @@
         <div class="tableauScore">
             <h2>Tableau des scores</h2>
             <%
-                int iCoups=0;
+                int iCoups=1;
                 
                 if (session.getAttribute("iCoups") != null) {
                     iCoups = (int) session.getAttribute("iCoups");

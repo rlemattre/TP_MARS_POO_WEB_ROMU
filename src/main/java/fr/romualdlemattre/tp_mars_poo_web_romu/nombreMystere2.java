@@ -38,8 +38,8 @@ public class nombreMystere2 extends HttpServlet {
             int iChiffreAuHasard = 0;
             boolean resultat = false;
             String indication = "";
-            int iCoups=0;
             int nbCoups=0;
+            int iCoups=0;
                                     
             HttpSession session = request.getSession();
             
@@ -75,6 +75,7 @@ public class nombreMystere2 extends HttpServlet {
                     }
                 }
                 
+                
                 session.setAttribute("resultat", resultat);
                 session.setAttribute("indication", indication);
                 session.setAttribute("iCoups", iCoups);
@@ -83,8 +84,7 @@ public class nombreMystere2 extends HttpServlet {
                 
                 RequestDispatcher rd = request.getRequestDispatcher("/nombreMystere.jsp");
 
-            rd.forward(request, response);
-             
+            rd.forward(request, response);    
         }
     }
 
